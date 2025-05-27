@@ -5,6 +5,7 @@ import { contacts } from './contacts'
 import Card from './components/Card'
 import Login from './components/Login'
 import SubmitColor from './SubmitColor'
+import ShowCurrentTime from './components/ShowCurrentTime'
 
 
 import Calculator from './components/Calculator'
@@ -29,6 +30,7 @@ function App() {
     }
     const cards = loggedIn  && <div>
    <SubmitColor/>
+   <ShowCurrentTime/>
 
 
       <Calculator/>
