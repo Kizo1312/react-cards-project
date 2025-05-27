@@ -1,21 +1,40 @@
 
 import './App.css'
+import { useState } from 'react'
 import { contacts } from './contacts'
 import Card from './components/Card'
 import Login from './components/Login'
+import SubmitColor from './SubmitColor'
+
 
 import Calculator from './components/Calculator'
 
 function App() {
+  const [count, setCount] = useState(0)
+  const [loggedIn, setLoggedIn] = useState(false)
   let key = 0
-    let loggedIn = true
+  
     function getLogin(){
-      loggedIn = true
+      setLoggedIn (true)
     }
-    console.log(loggedIn)
+    
+    function increment(){
+      setCount(count+1)
+    }
+    function decrement(){
+      if (count >0){
+
+        setCount(count -1)
+      }
+    }
     const cards = loggedIn  && <div>
+   <SubmitColor/>
+
 
       <Calculator/>
+      <button onClick={increment}>+</button>
+      <button onClick={decrement}>-</button>
+      <p>{count}</p>
         
         {contacts.map((contact) =>{
           key +=1
