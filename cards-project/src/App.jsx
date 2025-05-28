@@ -6,6 +6,7 @@ import Card from './components/Card'
 import Login from './components/Login'
 import SubmitColor from './SubmitColor'
 import ShowCurrentTime from './components/ShowCurrentTime'
+import AdressForm from './components/AdressForm'
 
 
 import Calculator from './components/Calculator'
@@ -29,6 +30,7 @@ function App() {
       }
     }
     const cards = loggedIn  && <div>
+      <AdressForm/>
    <SubmitColor/>
    <ShowCurrentTime/>
 
@@ -51,6 +53,7 @@ function App() {
   
   return (
     <>
+    
    {cards}
    {login}
       

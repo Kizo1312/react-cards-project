@@ -7,7 +7,7 @@ function ShowCurrentTime() {
         let vrijeme = time.toLocaleTimeString()
         setTime(vrijeme)
     }
-     setInterval(myTIme, 100)
+     setInterval(myTIme, 1000)
 
      
     
