@@ -1,4 +1,5 @@
 import Info from "./Info"
+import Button from "./Button"
 function Card (props){
     return (
         <div>
@@ -11,6 +12,7 @@ function Card (props){
         />
         <Info content = {props.phone}   />
         <Info content = {props.email}   />
+        <Button onClick={props.onClick}>DeleteCard</Button>
         </div>
 
     
