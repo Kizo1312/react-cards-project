@@ -12,7 +12,7 @@ function Card (props){
         />
         <Info content = {props.phone}   />
         <Info content = {props.email}   />
-        <Button onClick={props.onClick}>DeleteCard</Button>
+        <Button onClick={props.onClick} value= {"Delete card"}></Button>
         </div>
 
     
