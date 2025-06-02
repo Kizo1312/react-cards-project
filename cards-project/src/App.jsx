@@ -6,7 +6,7 @@ import Login from "./components/Login";
 import SubmitColor from "./SubmitColor";
 import ShowCurrentTime from "./components/ShowCurrentTime";
 import AdressForm from "./components/AdressForm";
-
+import Navbar from "./components/Navbar";
 import Calculator from "./components/Calculator";
 
 function App() {
@@ -66,6 +66,8 @@ function App() {
 
   return (
     <>
+    <Navbar/>
+    
       {cards}
       {login}
     </>

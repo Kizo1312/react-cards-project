@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./colorBoxes.css";
+import Navbar from "../navbar/Navbar";
 function ColorBoxes() {
   const [colors, setColors] = useState(["red", "green", "blue"]);
   const getRandomColor = () =>
@@ -35,6 +36,7 @@ function ColorBoxes() {
   }
   return (
     <div>
+      <Navbar/>
       <ul>
         {colors.map((color, index) => {
           return (
